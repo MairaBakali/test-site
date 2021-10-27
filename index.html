@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Mountain Lodges </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="sectiontop">
+<div class="top-bar">
+    <nav>
+        <a href="index.html"><img src="img/logo.png"> </a>
+        <div class="top-link">
+            <ul>
+                <li><a href="#section1">1. HISTORY</a> </li>
+                <li><a href="#section2">2. TEAM</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main-text">
+    <h1 > LOSANGELES  </h1>
+        <h2 >MOUNTAIN</h2>
+    </div>
+</div>
+</div>
+<div id="section1" class="section_history">
+    <header class="section_history_header">
+       <a href="index.html"><img src="img/logo.png">
+           <img src="img/textmainbg.png"></a>
+        <div class="top-link-history">
+            <ul>
+                <li><a href="#section1">1. HISTORY</a> </li>
+                <li><a href="#section2">2. TEAM</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="history_content">
+        <h1>01.  <h4>HISTORY </h4></h1>
+
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+</div>
+<div class="carousel">
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="img/slide1.jpg"></div>
+        <div class="item"><img src="img/slide2.jpg"></div>
+        <div class="item"><img src="img/slide1.jpg"></div>
+        <div class="item"><img src="img/slide2.jpg"></div>
+        <div class="item"><img src="img/slide1.jpg"></div>
+    </div>
+</div>
+<div id="section2" class="climb_section">
+    <header class="climb_section_header" >
+    <h1>02.</h1>
+        <h3>CLIMB</h3>
+        <p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc,
+            gravida quis hendrerit ac, tristique ut quam.
+            Vivamus suscipit dignissim tortor nec congue. </p>
+    </header>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'tab1')">MOUNTAIN 1</button>
+        <button class="tablinks" onclick="openTab(event, 'tab2')">MOUNTAIN 2</button>
+    </div>
+    <div id="tab1" class="tabcontent">
+    <div class="schedule_box">
+        <h1 >SCHEDULE</h1>
+        <div class="row">
+            <div class="column">
+                <p>28 Nov 2016</p>
+                <p>28 Nov 2016</p>
+                <p>28 Nov 2016</p>
+                <p>28 Nov 2016</p>
+            </div>
+            <div class="column" >
+                <p>Vestibulum viverra</p>
+                <p>Vestibulum viverra</p>
+                <p>Vestibulum viverra</p>
+                <p>Vestibulum viverra</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="tab2" class="tabcontent">
+        <h3>MOUNTAIN 2</h3>
+        <p>Lorem ipsum.</p>
+    </div>
+    <footer class="footer_sec">
+        <a href="#"> <img src="img/footer.png"></a>
+
+        <p>COPYRIGHT 2016. ALL RIGHTS RESERVED.</p>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script >
+    $('.owl-carousel').owlCarousel({
+        margin:10,
+        dots:true,
+        dotsEach:true,
+        loop:true,
+        items:10,
+        autoWidth:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+    function openTab(evt, tabname) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabname).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+</body>
+</html>

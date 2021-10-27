@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+ font-family: Lato-BlackItalic;
+    src: url("font/Lato-Black.woff");
+}
+body{
+    overflow: scroll;
+
+}
+.sectiontop{
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+}
+.top-bar{
+    min-height: 100vh;
+    background-image: linear-gradient(180deg,rgba(255,255,255,0.6)50%,rgba(0,0,0,0)),url("img/layer.png");
+}
+nav{
+    display: flex;
+    padding: 0.2% 18%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    height: 43px;
+    width:43px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px ;
+    position: relative;
+
+}
+nav ul li a {
+    text-decoration: underline;
+    font-family: Lato-BlackItalic, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12pt;
+    color: rgba(254, 254, 255, 255);
+    font-style: italic;
+    text-align: left;
+}
+
+
+.main-text{
+    margin: 0 auto;
+    position: absolute;
+    left: 30%;
+    bottom: 30%;
+    line-height: 0.8;
+}
+.main-text h1{
+    font-family:Bebas Neue;
+    font-size: 114px;
+    color: #4D4D4D;
+    text-align: center;
+    font-weight: 100;
+}
+.main-text h2{
+    font-size: 123.47px;
+    font-family:Bebas Neue;
+    text-align: center;
+    color: #414F6B;
+    font-weight: 100;
+}
+.section_history{
+    min-height: 100vh;
+    background: url("img/peak@1X.png") ;
+    background-size: cover;
+}
+.section_history header{
+    background: white;
+    display: flex;
+    padding: 0.2% 18%;
+    justify-content: space-between;
+    align-items: center;
+}
+.section_history_header{
+    padding: 10px;
+}
+.top-link-history{
+    color: #414f6b;
+}
+.top-link-history ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px ;
+    position: relative;
+}
+.top-link-history ul li a{
+    text-decoration: underline;
+    font-family: Lato-BlackItalic, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12pt;
+    color: #414f6b;
+    font-style: italic;
+    text-align: left;}
+.carousel{
+    margin:0 auto;
+    background: url("img/peak.jpg");
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+}
+.history_content{
+    position: relative;
+    width: 80%;
+    left: 12%
+}
+.history_content h1{
+    color: #6a7c97;
+    font-size: 135.63px;
+    font-family: 'Oswald', sans-serif;
+}
+.history_content h4{
+    background: transparent;
+    position: absolute;
+    color: #414F6B;
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+    top: 35%;
+    left: 13%;
+}
+.history_content p{
+    color: #6a7c97;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.climb_section{
+    background: url("img/climb_sec.png");
+    min-height: 100vh;
+}
+.climb_section header{
+    background: white;
+    display: flex;
+    padding: 0.2% 18%;
+    justify-content: space-between;
+    align-items: center;
+}
+.climb_section_header h1{
+    color: #414F6B;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+.climb_section_header h3{
+    color: #414F6B;
+    font-size: 32px;
+    font-weight: 800;
+}
+.climb_section_header p{
+    color: black;
+    font-size: 16px;
+    padding: 20px;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #414F6B;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #B0B4BE;
+    font-family: Oswald, sans-serif;
+    font-weight: 400;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    text-decoration: underline;
+    background-color: #B0B4BE;
+    color:#414F6B ;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    height: 300px;
+}
+.footer_sec{
+    background: #414F6B;
+    color: #63769D;
+    position: fixed;
+    bottom: 0  ;
+    width: 100%;
+    display: flex;
+    padding: 0.2% 0.5%;
+    justify-content: space-around;
+    align-items: center;
+}
+.schedule_box{
+    background: rgba(255,255,255,0.6);
+    position: relative;
+    left: 10%;
+    margin-top: 10%;
+    height: 158px;
+    width: 30%;
+    padding: 10px;
+}
+.schedule_box h1{
+    color: #414F6B;
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+}
+@media screen and (max-width: 480px) {
+    .tab {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+    .tab button {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+    .tab button.active {
+        background-color: #666;
+        color: #fff;
+    }
+    .main-text h1{
+        font-family:Bebas Neue;
+        font-size: 85px;
+        color: #4D4D4D;
+        text-align: center;
+        font-weight: 100;
+    }
+    .main-text h2{
+        font-size: 65px;
+        font-family:Bebas Neue;
+        text-align: center;
+        color: #414F6B;
+        font-weight: 100;
+    }
+    .top-link-history ul li a{
+        text-decoration: underline;
+        font-family: Lato-BlackItalic, AdobeInvisFont, MyriadPro-Regular;
+        font-size: 10pt;
+        color: #414f6b;
+        font-style: italic;
+        text-align: left;}
+    .history_content h1{
+        color: #6a7c97;
+        font-size: 85px;
+        font-family: 'Oswald', sans-serif;
+    }
+    .climb_section_header h1{
+        color: #414F6B;
+        font-size: 54px;
+        font-weight: bold;
+        font-family: 'Oswald', sans-serif;
+    }
+    .climb_section_header h3{
+        color: #414F6B;
+        font-size: 32px;
+        font-weight: 800;
+    }
+    .climb_section_header p{
+        color: black;
+        font-size: 12px;
+        padding: 20px;
+    }
+    .history_content h4{
+        background: transparent;
+        position: absolute;
+        color: #414F6B;
+        font-size: 32px;
+        font-family: 'Oswald', sans-serif;
+        top: 11% !important;
+        left: 15% !important;
+    }
+    .history_content p{
+        color: #6a7c97;
+        font-size: 16px;
+        margin-right: 20px;
+    }
+}
